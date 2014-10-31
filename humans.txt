@@ -1,0 +1,8 @@
+# humanstxt.org/
+
+# TEAM
+
+    Matt Collins -- Developer
+    Pete Goodman -- Developer
+    Jed Richards -- Developer
+    Michael Allanson -- Developer
