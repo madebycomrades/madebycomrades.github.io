@@ -192,7 +192,6 @@ textarea {
         }
 
         .container {
-            height:100%;
             max-width:1170px;
             padding:1.5em;
             margin:0 auto;
@@ -210,6 +209,7 @@ textarea {
                 height:100%;
                 text-align:center;
                 margin-bottom:50px;
+                padding:1em;
             }
 
                 .header-inner {
@@ -364,7 +364,11 @@ textarea {
 
         /* footer */
             footer {
-                margin-top:60px;
+                padding:1em 1em 0 1em;
+                margin-top:2em;
+            }
+
+            footer .footer-inner {
                 padding:20px;
                 background:#ec5959;
                 min-height:60px;
