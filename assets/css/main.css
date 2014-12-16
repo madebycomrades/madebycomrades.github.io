@@ -312,17 +312,22 @@ textarea {
 
                 .comrade h3 {
                     text-align:left;
-                    line-height:0.8em;
-                    margin:0 0 0.5em;
+                    margin:-8px 0 0.25em;
                 }
 
-                .comrade-top {
+                .comrade__top {
                     clear:both;
                     overflow:hidden;
                 }
 
                 .comrade p {
                     margin-top:0;
+                }
+
+                .comrade a {
+                    display:inline-block;
+                    margin-bottom:0.5em;
+                    padding-bottom:0;
                 }
 
                 .comrade img {
