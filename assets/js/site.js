@@ -24,7 +24,7 @@ function initHeader () {
         1.2,
         {
             maxFontSize: 61,
-            minFontSize: 24
+            minFontSize: 30
         }
     );
 }
