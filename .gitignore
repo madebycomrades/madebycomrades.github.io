@@ -6,3 +6,9 @@ Thumbs.db
 ._*
 Desktop.ini
 .Spotlight-V100
+node_modules
+
+# jeykll
+_site
+Gemfile
+Gemfile.lock
