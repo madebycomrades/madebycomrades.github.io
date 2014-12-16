@@ -195,6 +195,10 @@ textarea {
             fill: black !important;
         }
 
+        .icon-highlight {
+            fill: #ec5959 !important;
+        }
+
         .icon-centred {
             width: 100%;
         }
