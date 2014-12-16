@@ -34,7 +34,7 @@ function initExternalLinks() {
     var aElements = document.getElementsByTagName("a");
 
     for (i = 0; i < aElements.length; i++) {
-        if (aElements[i].hasAttribute('rel') && aElements[i].rel == 'external') {
+        if (aElements[i].hasAttribute('rel') && aElements[i].rel === 'external') {
             aElements[i].addEventListener('click', openExternalLink);
         }
     }
@@ -43,7 +43,7 @@ function initExternalLinks() {
 // click handler for rel="external" links
 function openExternalLink(e) {
     e.preventDefault();
-    var href = e.currentTarget.attributes['href'].value
+    var href = e.currentTarget.attributes['href'].value;
     window.open(href);
 }
 
