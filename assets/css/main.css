@@ -132,14 +132,6 @@ textarea {
         margin-bottom:2em;
     }
 
-    @media (min-width:600px) {
-        h1 {
-            font-size:4em;
-            letter-spacing:0.5em;
-            margin-bottom:2em;
-        }
-    }
-
     h2 {
         font-size:2em;
         letter-spacing:0.5em;
@@ -192,9 +184,8 @@ textarea {
         }
 
         .container {
-            height:100%;
             max-width:1170px;
-            padding:1.5em;
+            padding:0 1.5em 1.5em;
             margin:0 auto;
             overflow:visible;
         }
@@ -207,9 +198,9 @@ textarea {
 
         /* header */
             header {
-                height:100%;
                 text-align:center;
-                margin-bottom:50px;
+                margin-bottom:2em;
+                padding:1em;
             }
 
                 .header-inner {
@@ -364,7 +355,11 @@ textarea {
 
         /* footer */
             footer {
-                margin-top:60px;
+                padding:1em 1em 0 1em;
+                margin-top:2em;
+            }
+
+            footer .footer-inner {
                 padding:20px;
                 background:#ec5959;
                 min-height:60px;
