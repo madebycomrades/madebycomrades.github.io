@@ -314,10 +314,31 @@ textarea {
             /* row - comrades */
                 .row--comrades { }
 
+                .comrade h3 {
+                    text-align:left;
+                    margin:-8px 0 0.25em;
+                }
+
+                .comrade__top {
+                    clear:both;
+                    overflow:hidden;
+                }
+
                 .comrade p {
                     margin-top:0;
                 }
 
+                .comrade a {
+                    display:inline-block;
+                    margin-bottom:0.5em;
+                    padding-bottom:0;
+                }
+
+                .comrade img {
+                    width:25%;
+                    float:left;
+                    margin:0 1em 1em 0;
+                }
 
             /* row - work */
                 .row--work { }
