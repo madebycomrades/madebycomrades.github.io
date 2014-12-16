@@ -343,18 +343,12 @@ textarea {
             /* row - work */
                 .row--work { }
 
-                .row--work .recently {
-                    text-align:center;
-                    margin-bottom:2em;
-                }
-
-                .row--work h3 {
+                .project h3 {
                     font-size:1em;
                 }
 
-                .row--work em {
-                    display:block;
-                    color:rgba(255,255,255,0.8);
+                .project p {
+                    margin-top:0;
                 }
 
 
