@@ -1,13 +1,184 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Comrades!</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    <h1><em>Comrades!</em></h1>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Comrades!</title>
+        <meta name="description" content="A team of experienced freelance web developers">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="author" href="humans.txt" />
+        <link rel="stylesheet" href="assets/css/fonts.css">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width:0;height:0;display:none;"><symbol viewBox="0 0 48 48" id="icon-down-arrow"><title>down-arrow</title><path d="M33.17 17.17L24 26.34l-9.17-9.17L12 20l12 12 12-12z"/></symbol><symbol viewBox="0 0 48 48" id="icon-flexibility"><title>flexibility</title><path d="M36 8l-8 8h6v14c0 2.21-1.79 4-4 4s-4-1.79-4-4V16c0-4.41-3.59-8-8-8s-8 3.59-8 8v14H4l8 8 8-8h-6V16c0-2.21 1.79-4 4-4s4 1.79 4 4v14c0 4.41 3.59 8 8 8s8-3.59 8-8V16h6l-8-8z"/></symbol><symbol viewBox="0 0 48 48" id="icon-quality"><title>quality</title><path d="M24 2L6 10v12c0 11.11 7.67 21.47 18 24 10.33-2.53 18-12.89 18-24V10L24 2zm-4 32l-8-8 2.83-2.83L20 28.34l13.17-13.17L36 18 20 34z"/></symbol><symbol viewBox="0 0 48 48" id="icon-services"><title>services</title><path d="M38.86 25.95c.08-.64.14-1.29.14-1.95s-.06-1.31-.14-1.95l4.23-3.31c.38-.3.49-.84.24-1.28l-4-6.93c-.25-.43-.77-.61-1.22-.43l-4.98 2.01c-1.03-.79-2.16-1.46-3.38-1.97L29 4.84c-.09-.47-.5-.84-1-.84h-8c-.5 0-.91.37-.99.84l-.75 5.3c-1.22.51-2.35 1.17-3.38 1.97L9.9 10.1c-.45-.17-.97 0-1.22.43l-4 6.93c-.25.43-.14.97.24 1.28l4.22 3.31C9.06 22.69 9 23.34 9 24s.06 1.31.14 1.95l-4.22 3.31c-.38.3-.49.84-.24 1.28l4 6.93c.25.43.77.61 1.22.43l4.98-2.01c1.03.79 2.16 1.46 3.38 1.97l.75 5.3c.08.47.49.84.99.84h8c.5 0 .91-.37.99-.84l.75-5.3c1.22-.51 2.35-1.17 3.38-1.97l4.98 2.01c.45.17.97 0 1.22-.43l4-6.93c.25-.43.14-.97-.24-1.28l-4.22-3.31zM24 31c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/></symbol></svg>
+
+        <header>
+            <div class="header-inner">
+                <div class="header-content">
+                    <h1>Comrades!</h1>
+                    <p>Hello! We're a team of experienced freelance web developers.</p>
+                    <p><a class="transition" href="mailto:all@madebycomrades.com">all@madebycomrades.com</a></p>
+                    <a data-scroll class="next" href="#skills">
+                        <svg class="icon icon-inverse icon-centred icon-hero">
+                            <use xlink:href="#icon-down-arrow" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+
+            <hr>
+
+            <section class="row row--skills" id="skills">
+                <h2>We offer</h2>
+                <div class="skills block-container">
+                    <div class="skill skill--flexibility block block--third">
+                        <div class="block__inner">
+                            <h3>Flexibility</h3>
+                            <svg class="icon icon-centred icon-large">
+                                <use xlink:href="#icon-flexibility" />
+                            </svg>
+                            <p>We’re not a company, we’re a group of freelancers that work well together. We can self organise to form a ready-made dev team or join an existing team of developers. You can hire some of us or all of us depending on your needs.</p>
+                        </div>
+                    </div><!--
+
+                    --><div class="skill skill--quality block block--third">
+                        <div class="block__inner">
+                            <h3>Quality</h3>
+                            <svg class="icon icon-centred icon-large">
+                                <use xlink:href="#icon-quality" />
+                            </svg>
+                            <p>We care deeply about the quality of the work we produce. With years of industry experience we have the skills to get things done. We’re keen advocates of agile, testing, best practices and a pragmatic approach to shipping high quality code.</p>
+                        </div>
+                    </div><!--
+
+                    --><div class="skill skill--services block block--third">
+                        <div class="block__inner">
+                            <h3>Services</h3>
+                            <svg class="icon icon-centred icon-large">
+                                <use xlink:href="#icon-services" />
+                            </svg>
+                            <p>We specialise in full stack web development. Whether you need help scribbling on whiteboards in the planning phase, an MVP web app to validate a business idea or a dev team to come in and work on a production ready codebase we can help.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="row row--comrades" id="comrades">
+                <h2>The Comrades</h2>
+                <div class="comrades block-container">
+                    <div class="comrade comrade--jed block block--half">
+                        <div class="block__inner">
+                            <h3 class="underlined">Jed Richards</h3>
+                            <p>A frontend focused senior JavaScript developer. Specialising in application architecture, single page web apps and highly interactive pieces. Enthusiastic advocate of Node.js for project automation and backend use cases. An ex-Flash developer, so well at home with more creative and motion based frontend tasks.</p>
+                            <p><a class="transition" href="http://seisaku.co.uk/" rel="external">seisaku.co.uk</a></p>
+                        </div>
+                    </div><!--
+                    --><div class="comrade comrade--pete block block--half">
+                        <div class="block__inner">
+                            <h3 class="underlined">Pete Goodman</h3>
+                            <p>Primarily a front-end dev, specialising in HTML, CSS, JavaScript and associated technologies. Many years of experience building large websites and complex web apps. Also enjoys server-side programming with PHP, Node.js, Python and others. Capable of helping out with every phase of a project from planning and scoping through to delivery.</p>
+                            <p><a class="transition" href="http://petegoodman.com/" rel="external">petegoodman.com</a></p>
+                        </div>
+                    </div><!--
+                    --><div class="comrade comrade--mike block block--half">
+                        <div class="block__inner">
+                            <h3 class="underlined">Michael Allanson</h3>
+                            <p>An all-round developer able to build sites and the servers they live on from top to bottom. A fan of Vagrant, experienced with Python, Node.js, PHP on the backend and comfortable working with the ever-changing world of frontend technology.</p>
+                            <p><a class="transition" href="http://michaelallanson.com/" rel="external">michaelallanson.com</a></p>
+                        </div>
+                    </div><!--
+                    --><div class="comrade comrade--matt block block--half">
+                        <div class="block__inner">
+                            <h3 class="underlined">Matt Collins</h3>
+                            <p>A full stack developer working with HTML, CSS, JavaScript, Node.js, PHP and Python, using a wide range of frameworks including AngularJS, Backbone.js and Django. Many years experience working in digital agencies as well as a history of direct freelance clients. Can lead technical projects through design and build to deployment.</p>
+                            <p><a class="transition" href="http://mcollins.co.uk/" rel="external">mcollins.co.uk</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="row row--work" id="work">
+                <h2>Recent projects</h2>
+                <div class="projects block-container">
+                    <div class="project block block--third">
+                        <div class="block__inner">
+                            <h3 class="underlined">Geolocation startup</h3>
+                            <p>We built the first iteration of a map based single page web app on top of a startup’s spatial search REST API.</p>
+                        </div>
+                    </div><!--
+                    --><div class="project block block--third">
+                        <div class="block__inner">
+                            <h3 class="underlined">Ethical social network</h3>
+                            <p>We formed a ready-made frontend dev team to help scope, design and build a MVP social network single page web app.</p>
+                        </div>
+                    </div><!--
+                    --><div class="project block block--third">
+                        <div class="block__inner">
+                            <h3 class="underlined">Self help startup</h3>
+                            <p>We took on a full build of a startup’s main website along with an online psychometric testing component.</p>
+                        </div>
+                    </div><!--
+                    --><div class="project block block--third">
+                        <div class="block__inner">
+                            <h3 class="underlined">Rich media Ad-platform</h3>
+                            <p>Embedded in an agile product team we helped build an Angular single page web app designed to manage programmatic rich media ad campaigns.</p>
+                        </div>
+                    </div><!--
+                    --><div class="project block block--third">
+                        <div class="block__inner">
+                            <h3 class="underlined">Recruitment company</h3>
+                            <p>We built a Python REST API and Angular frontend for an MVP web app to help a large recruitment company validate a new business idea.</p>
+                        </div>
+                    </div><!--
+                    --><div class="project block block--third">
+                        <div class="block__inner">
+                            <h3 class="underlined">Digital education</h3>
+                            <p>We provided agile and planning consultancy to a leading digital training company while helping them re-build their bookings web app.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="row row--contact" id="contact">
+                <h2>Contact us</h2>
+                <p>If you would like to work with us, send us an email and we will get back to you.</p>
+                <p><a class="contact-btn transition" href="mailto:all@madebycomrades.com">all@madebycomrades.com</a></p>
+            </section>
+        </div>
+
+         <footer>
+            <div class="footer-inner">
+                <p>
+                    &copy; Comrades!
+                    <span class="year">2014</span>.
+                    <span class="tagline">The collective is real</span>.
+                </p>
+            </div>
+        </footer>
+
+        <script src="assets/js/smooth-scroll.min.js"></script>
+        <script src="assets/js/fittext.js"></script>
+        <script src="assets/js/site.js"></script>
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-56324607-1','auto');ga('send','pageview');
+        </script>
+    </body>
 </html>

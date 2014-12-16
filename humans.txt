@@ -1,0 +1,26 @@
+# humanstxt.org
+
+/* TEAM */
+
+    Web developer: Matt Collins
+    Contact: matt [at] mcollins.co.uk
+    Homepage: mcollins.co.uk
+    Twitter: @k0nG
+    From: England, UK
+
+    Web developer: Jed Richards
+    Contact: jed [at] seisaku.co.uk
+    Homepage: www.seisaku.co.uk
+    Twitter: @jedrichards
+    From: Wales, UK
+
+    Web developer: Michael Allanson
+    Contact: michael.allanson [at] gmail.com
+    Homepage: www.michaelallanson.com
+    Twitter: @somaton
+    From: England, UK
+
+    Web developer: Pete Goodman
+    Contact: pete [at] petegoodman.com
+    Homepage: petegoodman.com
+    From: England, UK
