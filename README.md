@@ -1,8 +1,7 @@
-```
- _____                               _           _ 
-/  __ \                             | |         | |
-| /  \/ ___  _ __ ___  _ __ __ _  __| | ___  ___| |
-| |    / _ \| '_ ` _ \| '__/ _` |/ _` |/ _ \/ __| |
-| \__/\ (_) | | | | | | | | (_| | (_| |  __/\__ \_|
- \____/\___/|_| |_| |_|_|  \__,_|\__,_|\___||___(_)
-```
+# Comrades! Homepage
+
+Currently live at http://madebycomrades.github.io and http://www.madebycomrades.com.
+
+## Making updates
+
+Any pushes to the `master` branch will update the live site, so update the site via GitHub PRs into that branch.
