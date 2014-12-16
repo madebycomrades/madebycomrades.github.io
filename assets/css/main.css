@@ -97,13 +97,9 @@ textarea {
 
 /* default HTML els */
     html {
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
+         box-sizing: border-box;
     }
     *, *:before, *:after {
-        -moz-box-sizing: inherit;
-        -webkit-box-sizing: inherit;
         box-sizing: inherit;
     }
 
@@ -264,99 +260,52 @@ textarea {
                 }
 
 
-        /* section blocks */
-            .block {
+        /* rows */
+            .row {
                 padding:2em 0;
             }
 
-            /* blocks - inner blocks */
-                .block__quarter,
-                .block__third,
-                .block__half {
-                    margin-bottom:4em;
-                }
 
-                .block__quarter:last-child,
-                .block__third:last-child,
-                .block__half:last-child {
-                    margin-bottom:0;
-                }
+        /* section blocks */
+            .block-container {
+                margin:0 -2.5em;
+            }
 
+            .block {
+                margin-bottom:2em;
+            }
 
-                /* quarter blocks */
-                    @media (min-width:600px) {
-                        .block__quarter {
-                            vertical-align:top;
-                            display:inline-block;
-                            width:50%;
-                            margin-bottom:1em;
-                            padding-right:5%;
-                        }
-                    }
+            .block__inner {
+                padding:0 2.5em;
+            }
 
-                    @media (min-width:800px) {
-                        .block__quarter {
-                            vertical-align:top;
-                            display:inline-block;
-                            width:25%;
-                            margin-bottom:1em;
-                            padding-right:5%;
-                        }
-
-                        .block__quarter:nth-of-type(4n) {
-                            padding-right:0;
-                        }
-                    }
-
+            /* blocks - sized */
 
                 /* third blocks */
-                    @media (min-width:700px) {
-                        .block__third {
+                    @media (min-width:50em) { /* 800 / 16 */
+                        .block--third {
                             vertical-align:top;
                             display:inline-block;
                             width:33%;
-                            margin-bottom:1em;
-                            padding:0 3%;
-                        }
-
-                        .block__third:nth-child(2) {
-                            padding-left:0;
-                        }
-
-                        .block__third:nth-child(3) {
-                            padding:0 1.5%;
-                        }
-
-                        .block__third:nth-child(4) {
-                            padding-right:0;
                         }
                     }
 
                 /* half blocks */
-                    @media (min-width:600px) {
-                        .block__half {
+                    @media (min-width:40em) { /* 640 / 16 */
+                        .block--half {
                             vertical-align:top;
                             display:inline-block;
                             width:50%;
-                            margin-bottom:1em;
-                        }
-
-                        .block__half:nth-of-type(odd) {
-                            padding-right:2.5%;
-                        }
-
-                        .block__half:nth-of-type(even) {
-                            padding-left:2.5%;
                         }
                     }
 
 
-            /* block - skills */
-                .block--skills { }
+            /* row - skills */
+                .row--skills { }
 
 
-            /* block - comrades */
-                .block--comrades { }
+            /* row - comrades */
+                .row--comrades { }
 
                 .comrade h3 {
                     text-align:left;
@@ -370,33 +319,32 @@ textarea {
                 }
 
 
-            /* block - work */
-                .block--work { }
+            /* row - work */
+                .row--work { }
 
-                .block--work .recently {
+                .row--work .recently {
                     text-align:center;
                     margin-bottom:2em;
                 }
 
-                .block--work ul {
-                    padding:0;
-                    list-style:none;
+                .row--work h3 {
+                    text-align:left;
+                    font-size:1em;
+                    padding-bottom:0.2em;
+                    margin-bottom:0.4em;
+                    border-bottom:1px solid #ec5959;
                 }
 
-                .block--work strong,
-                .block--work em {
+                .row--work em {
                     display:block;
-                }
-
-                .block--work strong {
-                    color:#aaa;
+                    color:rgba(255,255,255,0.8);
                 }
 
 
-            /* block - contact */
-                .block--contact { }
+            /* row - contact */
+                .row--contact { }
 
-                .block--contact p {
+                .row--contact p {
                     text-align:center;
                 }
 
