@@ -139,7 +139,7 @@ textarea {
         margin-top:0;
     }
 
-    @media (max-width:800px) {
+    @media (max-width:50em) { /* 800 / 16 */
         h2 {
             margin-bottom: 1em;
         }
@@ -147,10 +147,17 @@ textarea {
 
     h3 {
         font-size:1.5em;
-        letter-spacing:5px;
+        letter-spacing:0.2em;
         margin-top:0;
         margin-bottom:1em;
     }
+
+        h3.underlined {
+            text-align:left;
+            padding-bottom:0.25em;
+            margin-bottom:0.75em;
+            border-bottom:1px solid #ec5959;
+        }
 
     p, ul {
         font-size:1em;
@@ -162,11 +169,16 @@ textarea {
         text-decoration:none;
         color:#ec5959;
         border-bottom:1px solid #000;
-        padding-bottom:2px;
+        padding-bottom:0.2em;
     }
 
     a:hover {
         border-bottom-color:#ec5959;
+    }
+
+    hr {
+        margin:1em auto 3em;
+        max-width:8em;
     }
 
 /* page content */
@@ -196,13 +208,13 @@ textarea {
         }
 
         .container {
-            max-width:1170px;
+            max-width:75em; /* 1200 / 16 */
             padding:0 1.5em 1.5em;
             margin:0 auto;
             overflow:visible;
         }
 
-        @media (min-width:600px) {
+        @media (min-width:40em) { /* 640 / 16 */
             .container {
                 padding:2em;
             }
@@ -218,8 +230,8 @@ textarea {
                 .header-inner {
                     background:#ec5959;
                     color:#000;
-                    height:100%; /* expandable on small screens. min-height not working in FF with display:table */
-                    padding:60px 30px;
+                    height:100%; /* expandable on small screens. min-height doesn't work in FF with display:table */
+                    padding:4em 2em;
                     display:table; /* vertical centre */
                     width:100%;
                 }
@@ -230,22 +242,15 @@ textarea {
                 }
 
                 header p {
-                    max-width:330px;
+                    max-width:20em;
                     margin-left:auto;
                     margin-right:auto;
-                    margin-bottom: 30px;
-                }
-
-                @media (min-width:600px) {
-                    header p {
-                        margin-bottom: 40px;
-                    }
+                    margin-bottom: 2em;
                 }
 
                 header a {
                     color:#fff;
                     border-bottom-color:#ec5959;
-                    padding-bottom:2px;
                 }
 
                 header a:hover {
@@ -253,19 +258,14 @@ textarea {
                 }
 
                 header .next {
-                    color:#000;
-                    font-size:5em;
                     border:none;
-                }
-
-                header .next:hover {
-                    color:#444;
                 }
 
 
         /* rows */
             .row {
                 padding:2em 0;
+                overflow:hidden;
             }
 
 
@@ -275,7 +275,7 @@ textarea {
             }
 
             .block {
-                margin-bottom:2em;
+                margin-bottom:3em;
             }
 
             .block__inner {
@@ -310,13 +310,6 @@ textarea {
             /* row - comrades */
                 .row--comrades { }
 
-                .comrade h3 {
-                    text-align:left;
-                    padding-bottom:0.2em;
-                    margin-bottom:0.4em;
-                    border-bottom:1px solid #ec5959;
-                }
-
                 .comrade p {
                     margin-top:0;
                 }
@@ -331,11 +324,7 @@ textarea {
                 }
 
                 .row--work h3 {
-                    text-align:left;
                     font-size:1em;
-                    padding-bottom:0.2em;
-                    margin-bottom:0.4em;
-                    border-bottom:1px solid #ec5959;
                 }
 
                 .row--work em {
@@ -354,7 +343,7 @@ textarea {
                 .contact-btn {
                     display:inline-block;
                     background:#ec5959;
-                    padding:10px 30px;
+                    padding:1em 2em;
                     color:#fff;
                     border:none;
                 }
@@ -372,9 +361,9 @@ textarea {
             }
 
             footer .footer-inner {
-                padding:20px;
+                padding:1em;
                 background:#ec5959;
-                min-height:60px;
+                min-height:3em;
             }
 
             footer p {
