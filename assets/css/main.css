@@ -132,14 +132,6 @@ textarea {
         margin-bottom:2em;
     }
 
-    @media (min-width:600px) {
-        h1 {
-            font-size:4em;
-            letter-spacing:0.5em;
-            margin-bottom:2em;
-        }
-    }
-
     h2 {
         font-size:2em;
         letter-spacing:0.5em;
