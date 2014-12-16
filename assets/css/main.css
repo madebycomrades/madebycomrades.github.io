@@ -310,10 +310,26 @@ textarea {
             /* row - comrades */
                 .row--comrades { }
 
+                .comrade h3 {
+                    text-align:left;
+                    line-height:0.8em;
+                    margin:0 0 0.5em;
+                }
+
+                .comrade-top {
+                    clear:both;
+                    overflow:hidden;
+                }
+
                 .comrade p {
                     margin-top:0;
                 }
 
+                .comrade img {
+                    width:25%;
+                    float:left;
+                    margin:0 1em 1em 0;
+                }
 
             /* row - work */
                 .row--work { }
