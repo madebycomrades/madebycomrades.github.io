@@ -384,6 +384,64 @@ textarea {
                     margin-top:0;
                 }
 
+            /* row - endorsements */
+                .row--endorsements { }
+
+                .endorsement .block__inner {
+                    margin:0 0 2em;
+                }
+
+                .endorsement__quote p {
+                    display:inline;
+                }
+
+                .endorsement__quote span {
+                    color:#ec5959;
+                    font-family:"Source Sans Pro";
+                    font-size:3em;
+                    line-height:0.2em;
+                    position: relative;
+                    bottom:-15px;
+                }
+
+                .endorsement__client {
+                    text-align:right;
+                    font-size:1em;
+                    margin:0;
+                }
+
+                .endorsement__client h3 {
+                    margin:inherit;
+                    font-size:inherit;
+                    text-align:inherit;
+                    margin-top:0.8em;
+                }
+
+                .endorsement__client h4 {
+                    margin:inherit;
+                    font-size:inherit;
+                    text-align:inherit;
+                }
+
+                .endorsement__client a {
+                    display:block;
+                    float:right;
+                }
+
+                /* Adjust column width */
+                    @media (min-width:50em) { /* 800 / 16 */
+                        .endorsement .block__inner {
+                            margin-left:20%;
+                            margin-right:20%;
+                        }
+                    }
+
+                    @media (min-width:40em) { /* 640 / 16 */
+                        .endorsement .block__inner {
+                            margin-left:10%;
+                            margin-right:10%;
+                        }
+                    }
 
             /* row - contact */
                 .row--contact { }
