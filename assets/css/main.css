@@ -102,11 +102,11 @@ textarea {
         font-weight: 400;
         font-style: normal;
         font-stretch: normal;
-        src: url('../fonts/source-sans-pro/sourcesanspro-regular-latin.eot');
-        src: url('../fonts/source-sans-pro/sourcesanspro-regular-latin.eot?#iefix') format('embedded-opentype'),
-             url('../fonts/source-sans-pro/sourcesanspro-regular-latin.woff2') format('woff2'),
-             url('../fonts/source-sans-pro/sourcesanspro-regular-latin.woff') format('woff'),
-             url('../fonts/source-sans-pro/sourcesanspro-regular-latin.ttf') format('truetype');
+        src: url('../fonts/source-sans-pro/sourcesanspro-regular.eot');
+        src: url('../fonts/source-sans-pro/sourcesanspro-regular.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/source-sans-pro/sourcesanspro-regular.woff') format('woff'),
+             url('../fonts/source-sans-pro/sourcesanspro-regular.otf') format('opentype'),
+             url('../fonts/source-sans-pro/sourcesanspro-regular.ttf') format('truetype');
     }
 
     @font-face {
