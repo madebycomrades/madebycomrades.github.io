@@ -362,9 +362,15 @@ textarea {
                 }
 
                 .comrade img {
-                    width:25%;
+                    width:30%;
                     float:left;
                     margin:0 1em 1em 0;
+                }
+
+                @media (min-width:40em) { /* 640 / 16 */
+                    .comrade img {
+                        width:25%;
+                    }
                 }
 
             /* row - work */
