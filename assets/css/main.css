@@ -403,7 +403,7 @@ textarea {
                     color:#ec5959;
                     font-family:"Source Sans Pro";
                     font-size:3em;
-                    line-height:0.2em;
+                    line-height:0;
                     position: relative;
                     bottom:-15px;
                 }
