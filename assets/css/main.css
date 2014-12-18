@@ -272,6 +272,10 @@ textarea {
                     vertical-align:middle;
                 }
 
+                header h1 {
+                    padding-left: 0.5em;
+                }
+
                 header p {
                     max-width:20em;
                     margin-left:auto;
