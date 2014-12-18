@@ -157,6 +157,7 @@ textarea {
         font-size:1.5em;
         letter-spacing:0.5em;
         margin-bottom:2em;
+        padding-left: 0.5em;
     }
 
     h2 {
@@ -164,6 +165,7 @@ textarea {
         letter-spacing:0.5em;
         margin-bottom:2.5em;
         margin-top:0;
+        padding-left: 0.5em;
     }
 
     @media (max-width:40em) { /* 640 / 16 */
@@ -309,10 +311,6 @@ textarea {
             .header-content {
                 display:table-cell;
                 vertical-align:middle;
-            }
-
-            header h1 {
-                padding-left: 0.5em;
             }
 
             header p {
