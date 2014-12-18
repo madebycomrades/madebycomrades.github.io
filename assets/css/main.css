@@ -523,12 +523,11 @@ textarea {
 
     /* footer */
         footer {
-            padding:1em 1em 0 1em;
-            margin-top:2em;
+            padding: 1em 1em 0 1em;
         }
 
         footer .footer-inner {
-            padding:1em;
+            padding: 2em 1em;
             background:#ec5959;
             min-height:3em;
         }
