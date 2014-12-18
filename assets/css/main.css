@@ -417,6 +417,7 @@ textarea {
                 .endorsement__client h3 {
                     margin:inherit;
                     font-size:inherit;
+                    font-weight:bold;
                     text-align:inherit;
                     margin-top:0.8em;
                 }
@@ -424,12 +425,8 @@ textarea {
                 .endorsement__client h4 {
                     margin:inherit;
                     font-size:inherit;
+                    font-weight:normal;
                     text-align:inherit;
-                }
-
-                .endorsement__client a {
-                    display:block;
-                    float:right;
                 }
 
                 /* Adjust column width */
