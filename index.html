@@ -212,15 +212,12 @@
 
          <footer>
             <div class="footer-inner">
-                <p>If you would like to work with us, send us an email and we will get back to you.</p>
-                <p><a class="contact-btn transition" href="mailto:all@madebycomrades.com">all@madebycomrades.com</a></p>
+                <p><a class="transition contact-btn" href="mailto:all@madebycomrades.com">all@madebycomrades.com</a></p>
                 <p>
                     &copy; Comrades!
                     <span class="year">2014</span>.
                 </p>
-                <p>
-                    <span class="tagline">The collective is <a>real</a>.</span>
-                </p>
+                <p><span class="tagline">The collective is <a href="#">real</a>.</span></p>
             </div>
         </footer>
 
@@ -268,7 +265,11 @@
 
                 theCollectiveIs = shuffle(theCollectiveIs);
 
-                taglineLink.addEventListener('click', function () {
+                taglineLink.addEventListener('click', function (event) {
+                    event.returnValue = false;
+                    if ( event.preventDefault ) {
+                        event.preventDefault();
+                    }
                     if ( glitch ) {
                         glitch.stop();
                     }

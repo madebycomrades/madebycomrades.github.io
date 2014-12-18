@@ -500,26 +500,6 @@ textarea {
                     }
                 }
 
-        /* row - contact */
-            .row--contact { }
-
-            .row--contact p {
-                text-align:center;
-            }
-
-            .contact-btn {
-                display:inline-block;
-                background:#ec5959;
-                padding:1em 2em;
-                color:#fff;
-                border:none;
-            }
-
-            .contact-btn:hover {
-                background:#fff;
-                color:#ec5959;
-            }
-
 
     /* footer */
         footer {
@@ -537,23 +517,32 @@ textarea {
             text-align: center;
         }
 
+        footer p:first-child {
+            padding-bottom: 2em;
+        }
+
+        footer a.contact-btn {
+            color:#fff;
+            border-bottom-color:#ec5959;
+        }
+
+        footer a.contact-btn:hover {
+            border-bottom-color:#fff;
+        }
+
         footer .tagline a {
             color: #fff;
             cursor: pointer;
             border-bottom:1px dotted #fff;
         }
-    }
 
 /* helper classes */
     .transition {
         -webkit-transition: all 500ms;
-           -moz-transition: all 500ms;
-             -o-transition: all 500ms;
-                transition: all 500ms;
+        -moz-transition: all 500ms;
+        -o-transition: all 500ms;
+        transition: all 500ms;
     }
-
-
-
 
 /* ==========================================================================
    Helper classes
