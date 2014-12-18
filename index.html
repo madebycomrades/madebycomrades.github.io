@@ -221,7 +221,9 @@
                 <p>
                     &copy; Comrades!
                     <span class="year">2014</span>.
-                    <span class="tagline">The collective is real</span>.
+                </p>
+                <p>
+                    <span class="tagline">The collective is <a>real</a>.</span>
                 </p>
             </div>
         </footer>
@@ -249,9 +251,45 @@
              */
             !function(){var t=function(t,e,n){t.addEventListener?t.addEventListener(e,n,!1):t.attachEvent("on"+e,n)},e=function(t,e){for(var n in e)e.hasOwnProperty(n)&&(t[n]=e[n]);return t};window.fitText=function(n,o,r){var a=e({minFontSize:-1/0,maxFontSize:1/0},r),c=function(e){var n=o||1,r=function(){e.style.fontSize=Math.max(Math.min(e.clientWidth/(10*n),parseFloat(a.maxFontSize)),parseFloat(a.minFontSize))+"px"};r(),t(window,"resize",r)};if(n.length)for(var u=0;u<n.length;u++)c(n[u]);else c(n);return n}}();
 
+            /**
+             * GlitchText
+             * Copyright 2014 Jed Richards
+             * https://gist.github.com/jedrichards/ed8fd58e22d44c1212e8
+             */
+            function easeOut(t,e,i){return 1-Math.pow(1-t/e,i)}function randomInt(t,e){return Math.floor(Math.random()*(e-t+1))+t}function limit(t,e,i){return Math.min(i,Math.max(e,t))}function GlitchText(t,e,i,n,r){this.el=e,this.origText=t,this.duration=80*t.length,this.charDuration=i,this.numCharSteps=n,this.textLength=this.origText.length,this.onComplete=r,this.el.innerHTML="",this.running=!0}function GlitchTextLetter(t,e,i,n){this.value="",this.started=!1,this.complete=!1,this.randomChars=t,this.duration=e,this.numSteps=i,this.finalChar=n,this.charArray=[];for(var r=0;r<this.numSteps;r++)this.charArray[r]=r===this.numSteps-1?this.finalChar:" "===this.finalChar?" ":this.randomChars.charAt(randomInt(0,this.randomChars.length))}var randomChars="jldfsifnJSODNBD~±§1234567890!@£$%^&*()-=_+,./<>?";GlitchText.prototype.start=function(){this.lettersArray=[];for(var t=0;t<this.textLength;t++){var e=new GlitchTextLetter(randomChars,this.charDuration,this.numCharSteps,this.origText.charAt(t));this.lettersArray.push(e)}this.startTime=Date.now(),requestAnimationFrame(this.step.bind(this))},GlitchText.prototype.stop=function(){this.running=!1},GlitchText.prototype.step=function(){for(var t=easeOut(Date.now()-this.startTime,this.duration,3),e=0,i=Math.round(this.lettersArray.length*t),n="",r=0;r<this.textLength;r++)i>r&&this.lettersArray[r].start(),n+=this.lettersArray[r].getCurrChar(),this.lettersArray[r].isComplete()&&e++;this.el.innerHTML=n,e<this.textLength&&this.running?requestAnimationFrame(this.step.bind(this)):this.onComplete&&this.onComplete()},GlitchTextLetter.prototype.start=function(){this.started||(this.started=!0,this.startTime=Date.now(),requestAnimationFrame(this.step.bind(this)))},GlitchTextLetter.prototype.step=function(){var t=Date.now()-this.startTime,e=limit(easeOut(t,this.duration,3),0,1),i=Math.round((this.charArray.length-1)*e);this.value=this.charArray[i],t<this.duration?requestAnimationFrame(this.step.bind(this)):(this.complete=!0,this.value=this.finalChar)},GlitchTextLetter.prototype.getCurrChar=function(){return this.value},GlitchTextLetter.prototype.isComplete=function(){return this.complete};
+
             initSmoothScroll();
             initHeader();
             initExternalLinks();
+            initGlitchText();
+
+            function initGlitchText () {
+                var taglineLink = document.querySelector('footer .tagline a');
+                var index = 0;
+                var glitch;
+
+                var theCollectiveIs =['insufficiently advanced', 'octothorpe', 'destruction through the advancement of technology', 'a stick insect', 'a bee', 'internationalisation', 'parallelism', 'superb', 'mad', 'commanding', 'sentient', 'vague', 'unplanned', 'dangerous', 'glorious', 'many', 'reappropriated terminology', 'good animals', 'an orange spaceman', 'a progress mechanism', 'technobabble', 'keeping it buried, crying inside', 'profiting from loneliness', 'accelerated decrepitide', 'ephemeral paraphernalia', 'sentient decay', 'complete entropic scatter', 'under emoting', 'risen', 'gincident', 'a relativistic kill vehicle', 'matthew david collins limited syndrome', 'f91', 'indexed rabbit', 'kipple', 'unplanned obsolescence', 'weird things', 'superb english', 'because of accident', 'the bitter end', 'the engine room', 'indistinguishable from magic', 'confused'];
+
+                theCollectiveIs = shuffle(theCollectiveIs);
+
+                taglineLink.addEventListener('click', function () {
+                    if ( glitch ) {
+                        glitch.stop();
+                    }
+                    glitch = new GlitchText(theCollectiveIs[index], taglineLink, 800, 30);
+                    glitch.start();
+                    index++;
+                    if ( index === theCollectiveIs.length ) {
+                        theCollectiveIs = shuffle(theCollectiveIs);
+                        index = 0;
+                    }
+                });
+            }
+
+            function shuffle (o) {
+                for (var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+                return o;
+            };
 
             function initSmoothScroll () {
                 smoothScroll.init({

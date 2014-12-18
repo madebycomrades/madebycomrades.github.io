@@ -538,6 +538,12 @@ textarea {
             text-align: center;
         }
 
+        footer .tagline a {
+            color: #fff;
+            cursor: pointer;
+            border-bottom:1px dotted #fff;
+        }
+    }
 
 /* helper classes */
     .transition {
