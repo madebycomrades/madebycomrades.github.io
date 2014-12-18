@@ -356,6 +356,24 @@ textarea {
             padding:0 2.5em;
         }
 
+        @media (min-width:50em) { /* 800 / 16 */
+
+            .block--third-left .block__inner {
+                padding-left: 2.5em;
+                padding-right: 1em;
+            }
+
+            .block--third-mid .block__inner {
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+
+            .block--third-right .block__inner {
+                padding-left: 1em;
+                padding-right: 2em;
+            }
+        }
+
         /* blocks - sized */
 
             /* third blocks */
