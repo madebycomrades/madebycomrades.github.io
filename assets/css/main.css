@@ -163,7 +163,7 @@ textarea {
     h2 {
         font-size:2em;
         letter-spacing:0.5em;
-        margin-bottom:2.5em;
+        margin-bottom:3em;
         margin-top:0;
         padding-left: 0.5em;
     }
@@ -308,6 +308,12 @@ textarea {
                 width:100%;
             }
 
+            @media (max-width:40em) { /* 640 / 16 */
+                .header-inner {
+                    padding: 2em 1em;
+                }
+            }
+
             .header-content {
                 display:table-cell;
                 vertical-align:middle;
@@ -336,7 +342,7 @@ textarea {
 
     /* rows */
         .row {
-            padding:2em 0;
+            padding:3em 0;
             overflow:hidden;
         }
 
@@ -399,6 +405,10 @@ textarea {
 
         /* row - comrades */
             .row--comrades { }
+
+            .comrade {
+                margin-bottom: 2em;
+            }
 
             .comrade h3 {
                 text-align:left;
