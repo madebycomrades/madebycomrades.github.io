@@ -456,6 +456,10 @@ textarea {
         /* row - endorsements */
             .row--endorsements { }
 
+            .endorsement {
+                margin-bottom: 1.5em;
+            }
+
             .endorsement .block__inner {
                 margin:0 0 2em;
             }
