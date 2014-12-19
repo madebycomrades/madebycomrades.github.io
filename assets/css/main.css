@@ -7,13 +7,13 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
+   Base styles:opinionated defaults
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+    color:#222;
+    font-size:1em;
+    line-height:1.4;
 }
 
 /*
@@ -25,13 +25,13 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+    background:#b3d4fc;
+    text-shadow:none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+    background:#b3d4fc;
+    text-shadow:none;
 }
 
 /*
@@ -39,12 +39,12 @@ html {
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #ccc;
+    margin:1em 0;
+    padding:0;
 }
 
 /*
@@ -59,7 +59,7 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+    vertical-align:middle;
 }
 
 /*
@@ -67,9 +67,9 @@ video {
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+    border:0;
+    margin:0;
+    padding:0;
 }
 
 /*
@@ -77,7 +77,7 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+    resize:vertical;
 }
 
 /* ==========================================================================
@@ -85,10 +85,10 @@ textarea {
    ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+    margin:0.2em 0;
+    background:#ccc;
+    color:#000;
+    padding:0.2em 0;
 }
 
 /* ==========================================================================
@@ -98,23 +98,23 @@ textarea {
  * Fonts!
  */
     @font-face {
-        font-family: 'Source Sans Pro';
-        font-weight: 400;
-        font-style: normal;
-        font-stretch: normal;
-        src: url('../fonts/source-sans-pro/sourcesanspro-regular.eot');
-        src: url('../fonts/source-sans-pro/sourcesanspro-regular.eot?#iefix') format('embedded-opentype'),
+        font-family:'Source Sans Pro';
+        font-weight:400;
+        font-style:normal;
+        font-stretch:normal;
+        src:url('../fonts/source-sans-pro/sourcesanspro-regular.eot');
+        src:url('../fonts/source-sans-pro/sourcesanspro-regular.eot?#iefix') format('embedded-opentype'),
              url('../fonts/source-sans-pro/sourcesanspro-regular.woff') format('woff'),
              url('../fonts/source-sans-pro/sourcesanspro-regular.otf') format('opentype'),
              url('../fonts/source-sans-pro/sourcesanspro-regular.ttf') format('truetype');
     }
 
     @font-face {
-        font-family: 'Cousine Regular';
-        font-weight: normal;
-        font-style: normal;
-        src: url('../fonts/cousine/cousine-regular-webfont.eot');
-        src: url('../fonts/cousine/cousine-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        font-family:'Cousine Regular';
+        font-weight:normal;
+        font-style:normal;
+        src:url('../fonts/cousine/cousine-regular-webfont.eot');
+        src:url('../fonts/cousine/cousine-regular-webfont.eot?#iefix') format('embedded-opentype'),
              url('../fonts/cousine/cousine-regular-webfont.woff2') format('woff2'),
              url('../fonts/cousine/cousine-regular-webfont.woff') format('woff'),
              url('../fonts/cousine/cousine-regular-webfont.ttf') format('truetype'),
@@ -124,10 +124,10 @@ textarea {
 
 /* default HTML els */
     html {
-         box-sizing: border-box;
+         box-sizing:border-box;
     }
     *, *:before, *:after {
-        box-sizing: inherit;
+        box-sizing:inherit;
     }
 
     /* set explicit height here so header block can be full height */
@@ -157,21 +157,23 @@ textarea {
         font-size:1.5em;
         letter-spacing:0.5em;
         margin-bottom:2em;
-        padding-left: 0.5em;
+        padding-left:0.5em;
     }
 
     h2 {
         font-size:2em;
         letter-spacing:0.5em;
-        margin-bottom:2.5em;
+        margin-bottom:3em;
         margin-top:0;
-        padding-left: 0.5em;
+        padding-left:0.5em;
     }
 
-    @media (max-width:40em) { /* 640 / 16 */
+    @media (max-width:35em) { /* 560 / 16 */
 
         h2 {
-            margin-bottom: 1.5em;
+            font-size:1.5em;
+            margin-bottom:1.5em;
+            letter-spacing:0.25em;
         }
     }
 
@@ -215,34 +217,34 @@ textarea {
 
     /* icons */
         .icon {
-            width: 48px;
-            height: 48px;
-            fill: white !important;
+            width:48px;
+            height:48px;
+            fill:white !important;
         }
 
         .icon-inverse {
-            fill: black !important;
+            fill:black !important;
         }
 
         .icon-highlight {
-            fill: #ec5959 !important;
+            fill:#ec5959 !important;
         }
 
         .icon-centred {
-            width: 100%;
+            width:100%;
         }
 
         .icon-large {
-            height: 80px;
+            height:80px;
         }
 
         .icon-hero {
-            height: 120px;
+            height:120px;
         }
 
         .container {
             max-width:75em; /* 1200 / 16 */
-            padding: 0 1.5em 1.5em;
+            padding:0 1.5em 1.5em;
             margin:0 auto;
             overflow:visible;
         }
@@ -255,40 +257,40 @@ textarea {
 
     /* lines on either side of a heading */
         .fancy-heading {
-            line-height: 0;
+            line-height:0;
         }
 
         .fancy-heading span {
-            display: inline-block;
-            position: relative;
+            display:inline-block;
+            position:relative;
         }
 
         .fancy-heading span:before,
         .fancy-heading span:after {
-            content: "";
-            position: absolute;
-            border-top: 1px solid #666;
-            top: 0;
-            width: 1000px;
+            content:"";
+            position:absolute;
+            border-top:1px solid #666;
+            top:0;
+            width:1000px;
         }
         .fancy-heading span:before {
-            right: 100%;
-            margin-right: 1em;
+            right:100%;
+            margin-right:1em;
         }
         .fancy-heading span:after {
-            left: 100%;
-            margin-left: 0.5em;
+            left:100%;
+            margin-left:0.5em;
         }
 
         @media (max-width:40em) { /* 640 / 16 */
 
             .fancy-heading {
-                line-height: inherit;
+                line-height:inherit;
             }
 
             .fancy-heading span:before,
             .fancy-heading span:after {
-                display: none;
+                display:none;
             }
         }
 
@@ -308,6 +310,12 @@ textarea {
                 width:100%;
             }
 
+            @media (max-width:40em) { /* 640 / 16 */
+                .header-inner {
+                    padding:2em 1em;
+                }
+            }
+
             .header-content {
                 display:table-cell;
                 vertical-align:middle;
@@ -317,7 +325,7 @@ textarea {
                 max-width:20em;
                 margin-left:auto;
                 margin-right:auto;
-                margin-bottom: 2em;
+                margin-bottom:2em;
             }
 
             header a {
@@ -336,8 +344,15 @@ textarea {
 
     /* rows */
         .row {
-            padding:2em 0;
+            padding:3em 0;
             overflow:hidden;
+        }
+
+        @media (max-width:35em) { /* 560 / 16 */
+
+            .row {
+                padding:1.5em 0;
+            }
         }
 
 
@@ -347,7 +362,7 @@ textarea {
         }
 
         .block {
-            margin-bottom: 0;
+            margin-bottom:0;
         }
 
         .block__inner {
@@ -357,18 +372,18 @@ textarea {
         @media (min-width:50em) { /* 800 / 16 */
 
             .block--third-left .block__inner {
-                padding-left: 2.5em;
-                padding-right: 1em;
+                padding-left:2.5em;
+                padding-right:1em;
             }
 
             .block--third-mid .block__inner {
-                padding-left: 1em;
-                padding-right: 1em;
+                padding-left:1em;
+                padding-right:1em;
             }
 
             .block--third-right .block__inner {
-                padding-left: 1em;
-                padding-right: 2em;
+                padding-left:1em;
+                padding-right:2em;
             }
         }
 
@@ -399,6 +414,10 @@ textarea {
 
         /* row - comrades */
             .row--comrades { }
+
+            .comrade {
+                margin-bottom:2em;
+            }
 
             .comrade h3 {
                 text-align:left;
@@ -446,6 +465,10 @@ textarea {
         /* row - endorsements */
             .row--endorsements { }
 
+            .endorsement {
+                margin-bottom:1.5em;
+            }
+
             .endorsement .block__inner {
                 margin:0 0 2em;
             }
@@ -459,7 +482,7 @@ textarea {
                 font-family:"Source Sans Pro";
                 font-size:3em;
                 line-height:0;
-                position: relative;
+                position:relative;
                 bottom:-15px;
             }
 
@@ -503,22 +526,22 @@ textarea {
 
     /* footer */
         footer {
-            padding: 1em 1em 0 1em;
+            padding:1em 1em 0 1em;
         }
 
         footer .footer-inner {
-            padding: 2em 1em;
+            padding:2em 1em;
             background:#ec5959;
             min-height:3em;
         }
 
         footer p {
             margin:0;
-            text-align: center;
+            text-align:center;
         }
 
         footer p:first-child {
-            padding-bottom: 2em;
+            padding-bottom:2em;
         }
 
         footer a.contact-btn {
@@ -531,17 +554,17 @@ textarea {
         }
 
         footer .tagline a {
-            color: #fff;
-            cursor: pointer;
+            color:#fff;
+            cursor:pointer;
             border-bottom:1px dotted #fff;
         }
 
 /* helper classes */
     .transition {
-        -webkit-transition: all 500ms;
-        -moz-transition: all 500ms;
-        -o-transition: all 500ms;
-        transition: all 500ms;
+        -webkit-transition:all 500ms;
+        -moz-transition:all 500ms;
+        -o-transition:all 500ms;
+        transition:all 500ms;
     }
 
 /* ==========================================================================
@@ -554,8 +577,8 @@ textarea {
  */
 
 .hidden {
-    display: none !important;
-    visibility: hidden;
+    display:none !important;
+    visibility:hidden;
 }
 
 /*
@@ -564,14 +587,14 @@ textarea {
  */
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+    border:0;
+    clip:rect(0 0 0 0);
+    height:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    width:1px;
 }
 
 /*
@@ -582,12 +605,12 @@ textarea {
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+    clip:auto;
+    height:auto;
+    margin:0;
+    overflow:visible;
+    position:static;
+    width:auto;
 }
 
 /*
@@ -595,11 +618,11 @@ textarea {
  */
 
 .invisible {
-    visibility: hidden;
+    visibility:hidden;
 }
 
 /*
- * Clearfix: contain floats
+ * Clearfix:contain floats
  *
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -612,12 +635,12 @@ textarea {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content:" "; /* 1 */
+    display:table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+    clear:both;
 }
 
 /* ==========================================================================
@@ -638,24 +661,24 @@ textarea {
     *,
     *:before,
     *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        background:transparent !important;
+        color:#000 !important; /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
+        box-shadow:none !important;
+        text-shadow:none !important;
     }
 
     a,
     a:visited {
-        text-decoration: underline;
+        text-decoration:underline;
     }
 
     a[href]:after {
-        content: " (" attr(href) ")";
+        content:" (" attr(href) ")";
     }
 
     abbr[title]:after {
-        content: " (" attr(title) ")";
+        content:" (" attr(title) ")";
     }
 
     /*
@@ -665,13 +688,13 @@ textarea {
 
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
-        content: "";
+        content:"";
     }
 
     pre,
     blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
+        border:1px solid #999;
+        page-break-inside:avoid;
     }
 
     /*
@@ -680,27 +703,27 @@ textarea {
      */
 
     thead {
-        display: table-header-group;
+        display:table-header-group;
     }
 
     tr,
     img {
-        page-break-inside: avoid;
+        page-break-inside:avoid;
     }
 
     img {
-        max-width: 100% !important;
+        max-width:100% !important;
     }
 
     p,
     h2,
     h3 {
-        orphans: 3;
-        widows: 3;
+        orphans:3;
+        widows:3;
     }
 
     h2,
     h3 {
-        page-break-after: avoid;
+        page-break-after:avoid;
     }
 }
