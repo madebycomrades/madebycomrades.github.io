@@ -168,10 +168,12 @@ textarea {
         padding-left:0.5em;
     }
 
-    @media (max-width:40em) { /* 640 / 16 */
+    @media (max-width:35em) { /* 560 / 16 */
 
         h2 {
+            font-size:1.5em;
             margin-bottom:1.5em;
+            letter-spacing:0.25em;
         }
     }
 
@@ -346,6 +348,13 @@ textarea {
             overflow:hidden;
         }
 
+        @media (max-width:35em) { /* 560 / 16 */
+
+            .row {
+                padding:1.5em 0;
+            }
+        }
+
 
     /* section blocks */
         .block-container {
@@ -457,7 +466,7 @@ textarea {
             .row--endorsements { }
 
             .endorsement {
-                margin-bottom: 1.5em;
+                margin-bottom:1.5em;
             }
 
             .endorsement .block__inner {
