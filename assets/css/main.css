@@ -405,6 +405,11 @@ textarea {
                         display:inline-block;
                         width:50%;
                     }
+
+                    .block--centered {
+                        display:block;
+                        margin:0 auto;
+                    }
                 }
 
 
@@ -417,6 +422,10 @@ textarea {
 
             .comrade {
                 margin-bottom:2em;
+            }
+
+            .comrade-rich {
+                margin: 0 auto;
             }
 
             .comrade h3 {
